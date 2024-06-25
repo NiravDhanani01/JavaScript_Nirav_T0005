@@ -72,6 +72,6 @@ function frequentCheck(arr) {
   return freq;
 }
 
-console.log(frequentCheck([1, 2, 3, 4, 4, 1, 0]));
+console.log(frequentCheck([1, 2, 3, 4, 4, 1, 0,0]));
 
 // Q==> write a function to get the last element of an Array. passing a parameter 'n' will return the first 'n' element of the array
