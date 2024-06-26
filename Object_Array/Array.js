@@ -95,7 +95,29 @@ let flat = [1,2,3,4,[6,7,[5]]]
 console.log("sub aaray =>",flat);
 let flatarr = flat.flat(Infinity)
 console.log(`array after flat`,flatarr);
+// flat combine sub-array in to main aaray
 
+charAt()
+let text = "hello World"
+console.log(text.charAt(0).toUpperCase());
+
+// merge two array 
+let arr1 = [1,2,3,4,5,6,7,8]
+let arr2 = [2,4,5]
+let arr3 = arr1.concat(arr2)
+console.log(arr3);
+
+// replace 
+let textss = "hello World"
+console.log(textss.replace("World","Nirav"));
+
+substring
+let arr = "hello World"
+console.log(arr.substring(4,5));
+
+match
+let texts = "gain main plaIn"
+console.log(texts.match("ain"));
 
 // Write an array of numbers and returns a new array with each number doubled.
 let Narray = [1, 2, 3, 4];

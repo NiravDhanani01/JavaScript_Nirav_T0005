@@ -46,10 +46,16 @@ let obj1 = {
 }
 let obj2 ={
     lastName : "xyz",
+    sub:45
+}
+let obj3 = {
+    name : "hari",
+    lastName : "Dhanani",
+    id:25
 }
 
-let obj3 = Object.assign(obj1,obj2)
-console.log('assign object value => ',obj3);
+let obj4 = Object.assign(obj1,obj2,obj3)
+console.log('assign object value => ',obj4);
 console.log("===================");
 
 //freeze
