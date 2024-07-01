@@ -10,12 +10,12 @@
 <body>
     <h1 class="Dom">Dom Manipulation</h1>
     <p id="bulb"></p>
-    <button id="btn">off</button>
+    <button id="btn"></button>
 
 </body>
 <script>
     let a = document.querySelector(".Dom");
-    // a.innerHTML = "Hello change world"
+    a.innerHTML = "Hello change world"
     a.style.fontSize = "40px"
     a.style.color = "red"
 
@@ -25,17 +25,29 @@
 
     // on off logic
 
-    let p = document.querySelector("#bulb")
-    let btn = document.querySelector("#bnt")
+    let p = document.querySelector("#bulb");
+    let btns = document.querySelector("#btn")
 
     p.innerHTML = "ON"
     p.style.backgroundColor = "green"
     p.style.color = "white"
+    btns.innerHTML = "ON"
+    btns.innerHTML = "Off"
+    let check = 0
 
-    // btn.addEventListener("cli")
-
-
-    
+    btns.addEventListener("click", function () {
+        if (check == 0) {
+            p.innerHTML = "Off"
+            p.style.backgroundColor = "black"
+            btn.innerHTML = "on"
+            check = 1
+        } else {
+            p.innerHTML = "ON"
+            p.style.backgroundColor = "green"
+            btn.innerHTML = "Off"
+            check = 0
+        }
+    })
 </script>
 
 </html>
