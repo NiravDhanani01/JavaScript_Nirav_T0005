@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples</title>
+</head>
+
+<body>
+    <h1 class="Dom">Dom Manipulation</h1>
+    <p id="bulb"></p>
+    <button id="btn">off</button>
+
+</body>
+<script>
+    let a = document.querySelector(".Dom");
+    // a.innerHTML = "Hello change world"
+    a.style.fontSize = "40px"
+    a.style.color = "red"
+
+    a.addEventListener("click", function () {
+        a.innerHTML = "mouse Enter event trigger"
+    })
+
+    // on off logic
+
+    let p = document.querySelector("#bulb")
+    let btn = document.querySelector("#bnt")
+
+    p.innerHTML = "ON"
+    p.style.backgroundColor = "green"
+    p.style.color = "white"
+
+    // btn.addEventListener("cli")
+
+
+    
+</script>
+
+</html>
