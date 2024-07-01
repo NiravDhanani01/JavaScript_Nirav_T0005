@@ -2,7 +2,7 @@ let str = "Hello Good Morning 123"
 
 // char Count  
 let charCount = str.trim().length
-console.log("Here Total character is =>",charCount);
+console.log("Here Total character is =>", charCount);
 
 // only words not number 
 let regex = /[^a-zA-Z]/gi
@@ -19,14 +19,14 @@ console.log("======");
 
 // frequency of obj 
 let frequency = {}
-
 console.log("Check Frequency")
-
-for(let i = 0;i<str.length;i++){
-    if(frequency[i] > 0){
-        frequency[i]++
-    } else{
-        frequency[i] = 1
+for(let i=0;i<str.length;i++){
+    let ch = str.charAt(i)
+    if(frequency[ch] > 0){
+        frequency[ch]++ 
+    } else {
+        frequency[ch] = 1
     }
 }
 console.log(frequency);
+console.log("============");
